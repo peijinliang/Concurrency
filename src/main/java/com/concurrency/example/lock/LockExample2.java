@@ -14,6 +14,20 @@ import java.util.concurrent.locks.ReentrantLock;
  * Crete by Marlon
  * Create Date: 2018/6/14
  * Class Describe
+ *
+ * 重要方法：
+ * 构造方法 ReentrantLock(false); 构造公平锁或者非公平锁
+ * lock.tryLock()
+ * lock.tryLock(long,TimeUnit)
+ * lock.isLocker()
+ * lock.lockInterruptibly()  如果当前线程没有锁定
+ * lock.isHeldByCurrentThread()
+ * lock.isFair() 判断是否为公平锁
+ *
+ * lock.hasQueuedThread(Thread) 线程时候获取等待此锁定
+ * lock.hasQueuedThreads() 是否有线程等待此锁定
+ * lock.getHoldCount() 当前线程锁定的个数
+ * 
  **/
 
 @ThreadSafe

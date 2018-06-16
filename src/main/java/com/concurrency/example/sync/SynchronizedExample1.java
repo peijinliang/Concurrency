@@ -34,6 +34,7 @@ public class SynchronizedExample1 {
         }
     }
 
+
     public static void main(String[] args) {
         SynchronizedExample1 synchronizedExample1 = new SynchronizedExample1();
         SynchronizedExample1 synchronizedExample2 = new SynchronizedExample1();
