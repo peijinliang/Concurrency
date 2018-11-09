@@ -30,7 +30,6 @@ public class VectorExample1 {
         ExecutorService service = Executors.newCachedThreadPool();
 
         //信号灯 200个信号灯  最多允许有200个线程同时访问，否则进入等待状态
-
         final Semaphore semaphore = new Semaphore(threadTotal);
 
         //总的请求数是5000

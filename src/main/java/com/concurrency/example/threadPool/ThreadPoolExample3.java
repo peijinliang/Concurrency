@@ -10,6 +10,7 @@ import java.util.concurrent.Executors;
  * Create Date: 2018/6/16
  * Class Describe
  **/
+
 @Slf4j
 public class ThreadPoolExample3 {
 
@@ -27,7 +28,5 @@ public class ThreadPoolExample3 {
         }
 
         executorService.shutdown();
-
-        
     }
 }

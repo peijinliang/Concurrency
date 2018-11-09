@@ -37,7 +37,7 @@ public class SingletonExample5 {
      * @return
      */
     public static synchronized SingletonExample5 getInstance() {
-        //双重检测方式
+        // 双重检测方式
         if (instance == null) {
             synchronized (SingletonExample5.class) {
                 if (instance == null) {

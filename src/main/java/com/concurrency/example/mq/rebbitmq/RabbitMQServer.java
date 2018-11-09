@@ -18,5 +18,4 @@ public class RabbitMQServer {
         log.info("{}",message);
     }
 
-
 }

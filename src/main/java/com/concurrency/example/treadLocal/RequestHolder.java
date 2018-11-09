@@ -12,7 +12,6 @@ public class RequestHolder {
 
     /**
      * 默认会取出当前线程的id，放到map里边去
-     *
      * @param id
      */
     public static void add(Long id) {
@@ -21,7 +20,6 @@ public class RequestHolder {
 
     /**
      * 相当于传入当前线程的id，然后去底层存储的map中去取
-     *
      * @return
      */
     public static Long getId() {

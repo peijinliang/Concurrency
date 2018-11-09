@@ -3,7 +3,6 @@ package com.concurrency;
 import com.concurrency.example.treadLocal.RequestHolder;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -28,6 +27,5 @@ public class HttpInterceptor extends HandlerInterceptorAdapter {
         log.info("afterCompletion");
         return;
     }
-
 
 }

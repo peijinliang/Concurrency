@@ -33,5 +33,4 @@ public class KafkaSender {
         kafkaTemplate.send(TopicConstans.TEST, gson.toJson(message));
     }
 
-
 }

@@ -7,6 +7,7 @@ import java.util.Date;
  * Create Date: 2018/6/17
  * Class Describe
  **/
+
 public class Message {
 
     private Long id;
@@ -14,7 +15,6 @@ public class Message {
     private String msg;
 
     private Date sendTime;
-
 
     public Long getId() {
         return id;

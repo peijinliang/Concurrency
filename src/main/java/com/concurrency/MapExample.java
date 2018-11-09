@@ -24,8 +24,8 @@ public class MapExample {
     private static int clientTotal = 5000;
 
     public static void main(String[] args) {
-        ExecutorService executorService = Executors.newCachedThreadPool();
 
+        ExecutorService executorService = Executors.newCachedThreadPool();
         Semaphore semaphore = new Semaphore(threadTotal);
 
         for (int index = 0; index < clientTotal; index++) {
@@ -45,7 +45,9 @@ public class MapExample {
     }
 
     public static void func(int threadNum) {
+
         maps.put(threadNum, threadNum);
+
     }
 
 }

@@ -18,9 +18,9 @@ public class VectorExample3 {
 
     /**
      * java.util.ConcurrentModificationException
-     *
      * @param v1
      */
+
     private static void test1(Vector<Integer> v1) {
         for (Integer i : v1) {
             if (i.equals(3)) {

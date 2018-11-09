@@ -30,5 +30,5 @@ public class MQController {
         kafkaSender.send(message);
         return "success";
     }
-
+    
 }

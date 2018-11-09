@@ -41,7 +41,6 @@ Java 内存模型（java Memory model ,jmm)
     当多个线程，访问同一个变量，他们拥有的是该变量的私有拷贝。
    
     CPU  ->  cpu 寄存器 -> cpu缓存（读写速度非常块的存储区域） ->  内存 
-    
 
 Java内存模型  同步八种操作
 
@@ -82,6 +81,7 @@ Java内存模型  同步八种操作
     有序性：一个线程观察其他线程中的指令执行顺序，由于指令重排序的存在，该观察结果一般杂乱无序。
 
 #### LongAdder  和  AtomicLong 区别？
+
    [https://blog.csdn.net/yao123long/article/details/63683991]
     
 # 锁  互斥  
@@ -122,7 +122,6 @@ Java内存模型  同步八种操作
     通过加入内存屏障和禁止重排序优化来实现：
        对volatile变量写操作时，会在写操作后加入一条store屏障指令，将本地内存中的共享变量值刷新到主内存中去。
        对volatile变量读操作时，会在读操作前加入一条load屏障指令，从主内存中读取共享变量。
-   
   
 # 有序性
 
@@ -132,7 +131,6 @@ Java内存模型  同步八种操作
     主要包含： volatile 、 synchrionized 、lock 
     先天的有序性
     
-   
 #### Happens before 原则(深入理解java虚拟机)
 
     1)程序次序规则：一个线程内，按照代码顺序，书写在前面的操作先发生于书写在后面的操作。
@@ -222,6 +220,7 @@ Java内存模型  同步八种操作
 
 #并发容器 (J U C)
 ###ArrayList -> CopyOnWriteArrayList
+
     原理： copy一个副本，进行写操作，写操作加锁。
     缺点
     1、需要copy数组，就要消耗内存，如果元素比价多的时候，可能导致 gc
@@ -274,7 +273,6 @@ Java内存模型  同步八种操作
     就可以通过公共接口随意访问它
     
     4）被守护对象：被守护对象只能通过获取特定的锁来访问
-
 
 
 # AbstractQueuedSynchronizer - AQS  jdk1.5  
@@ -374,7 +372,6 @@ Java内存模型  同步八种操作
     hasQueuedThreads() 查询是否有线程在等待获取此锁定
     getHoldCount() 查询当前线程保持锁定的个数，也就是调用了lock()方法的个数
    
-   
 # ReentranReadWriteLock
     
     在没有任何读写锁的时候才可以取得写入锁。
@@ -397,6 +394,7 @@ Java内存模型  同步八种操作
     3、StampedLock 对吞吐量有巨大改进，特别是在读线程越来越多的场景下。
 
 ### 关于锁的选择？
+
     1、当之后少量竞争者的时候 synchronized 是非常好的选择。
     2、竞争者不少，但是线程增长的曲线是可以预估的，这个是时候ReentrantLock最好的选择
     3、避免造成死锁
@@ -610,6 +608,7 @@ SychronousQueue
     
     读操作系统扩展： memcache ,redis ,CDN等缓存
     写扩展：Cassandra 、Hbase
+    
 
 ###缓存
     
@@ -718,8 +717,8 @@ SychronousQueue
 
 ### RPC 远程调用
 
-
 ### 应用拆分
+
 
 #### 应用拆分原则
     
@@ -829,7 +828,8 @@ SychronousQueue
     主备切换：apache curator + zookeeper 分布式锁实现
 
 
-监控报警机制(手记)
+监控报警机制
+
 
 
             

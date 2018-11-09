@@ -2,7 +2,6 @@ package com.concurrency.example.lock;
 
 import com.concurrency.annoations.ThreadSafe;
 import lombok.extern.slf4j.Slf4j;
-
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -14,6 +13,7 @@ import java.util.concurrent.locks.StampedLock;
  * Create Date: 2018/6/14
  * Class Describe
  **/
+
 @ThreadSafe
 @Slf4j
 public class LockExample5 {

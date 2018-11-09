@@ -33,9 +33,6 @@ public class SingletonExample4 {
      * 1、memory = allocate() 分配对象的内存空间
      * 3、 instance = memory 设置instance指向刚分配的内存
      * 2、ctorInstance() 初始化对象
-     *
-     *
-     *
      */
 
     /**

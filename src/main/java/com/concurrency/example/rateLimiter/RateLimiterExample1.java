@@ -17,9 +17,13 @@ public class RateLimiterExample1 {
                 handle(index);
             }
         }
+
     }
 
     private static void handle(int i) {
-       log.info("{}", i);
+
+        log.info("{}", i);
+
     }
+
 }

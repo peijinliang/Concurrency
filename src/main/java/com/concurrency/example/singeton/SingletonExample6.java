@@ -37,12 +37,10 @@ public class SingletonExample6 {
     }
 
 
-
     /**
      * 单例对象
      */
     private static SingletonExample6 instance = null;
-
 
 
     /**

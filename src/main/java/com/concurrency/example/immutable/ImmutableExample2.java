@@ -28,7 +28,6 @@ public class ImmutableExample2 {
         map = Collections.unmodifiableMap(map);
     }
 
-
     public static void main(String[] args) {
         map.put(1, 2000);
         //java.lang.UnsupportedOperationException

@@ -17,11 +17,9 @@ import java.util.concurrent.Semaphore;
 public class CountExample {
 
     //线程总数
-
     private static int threadTotal = 200;
 
     //客户端总数进行请求
-
     private static int clientTotal = 5000;
 
     private static int count = 0;
@@ -48,9 +46,7 @@ public class CountExample {
     }
 
     public static void add() {
-
         count++;
-
     }
 
 }

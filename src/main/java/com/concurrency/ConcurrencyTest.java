@@ -26,7 +26,6 @@ public class ConcurrencyTest {
     public static int count = 0;
 
     public static void main(String[] args) throws InterruptedException {
-
         ExecutorService service = Executors.newCachedThreadPool();
 
         //信号灯 200个信号灯  最多允许有200个线程同时访问，否则进入等待状态
@@ -48,6 +47,7 @@ public class ConcurrencyTest {
                 countDownLatch.countDown();
             });
         }
+
         countDownLatch.await();
         log.info("count:{}", count);
         service.shutdown();

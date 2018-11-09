@@ -18,11 +18,13 @@ public class SynchronizedExample2 {
      * 修饰一个类
      */
     public static void test1(int j) {
+
         synchronized (SynchronizedExample2.class) {
             for (int i = 0; i < 10; i++) {
                 log.info("test1---{}---{}", j, i);
             }
         }
+
     }
 
     /**

@@ -10,10 +10,12 @@ import java.util.concurrent.Executors;
  * Create Date: 2018/6/16
  * Class Describe
  **/
+
 @Slf4j
 public class ThreadPoolExample1 {
 
     public static void main(String[] args) {
+
         ExecutorService executorService = Executors.newCachedThreadPool();
 
         for (int i = 0; i < 10; i++) {
@@ -27,7 +29,6 @@ public class ThreadPoolExample1 {
         }
 
         executorService.shutdown();
-
-
     }
+
 }

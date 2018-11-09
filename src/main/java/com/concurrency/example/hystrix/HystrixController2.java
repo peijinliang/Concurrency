@@ -19,9 +19,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/hystrix2")
 @DefaultProperties(defaultFallback = "defaultFail")
 public class HystrixController2 {
-
-    @HystrixCommand(commandProperties = {
-                                                @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "500")
+    
+    @HystrixCommand(commandProperties = {@HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "500")
     })
     @RequestMapping("/test1")
     @ResponseBody
@@ -51,8 +50,6 @@ public class HystrixController2 {
         log.warn("default fail");
         return "default fail";
     }
-
-
 
 
 }
